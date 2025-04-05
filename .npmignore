@@ -1,0 +1,24 @@
+# Source files
+src/
+tsconfig.json
+
+# Test files
+test/
+coverage/
+
+# Config files
+jest.config.js
+.eslintrc
+.prettierrc
+
+# Development files
+.editorconfig
+.gitignore
+.npmrc
+
+# CI files
+.travis.yml
+.github/
+
+# Documentation (unless you want to publish it)
+docs/
