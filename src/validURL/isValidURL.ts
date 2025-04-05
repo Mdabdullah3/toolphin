@@ -1,7 +1,7 @@
 export const isValidURL = (url: string): boolean => {
   try {
-    new URL(url);
-    return true;
+    const parsed = new URL(url);
+    return ["http:", "https:", "ftp:"].includes(parsed.protocol);
   } catch (_) {
     return false;
   }

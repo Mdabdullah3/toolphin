@@ -18,3 +18,7 @@ __exportStar(require("./formatting/dateFormatter"), exports);
 __exportStar(require("./validation/emailValidator"), exports);
 __exportStar(require("./empty/isEmpty"), exports);
 __exportStar(require("./randomId/randomId"), exports);
+__exportStar(require("./validURL/isValidURL"), exports);
+__exportStar(require("./cleanObject/cleanObject"), exports);
+__exportStar(require("./maskEmail/maskEmail"), exports);
+__exportStar(require("./timeAgo/timeAgo"), exports);
