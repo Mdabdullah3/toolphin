@@ -1,8 +1,9 @@
 {
-  "name": "common-utils",
+  "name": "toolphin",
   "version": "1.0.0",
   "description": "A collection of common utility functions for JavaScript/TypeScript projects",
   "main": "dist/index.js",
+  "type": "module",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
@@ -28,6 +29,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mdabdullah3/common-utils"
+    "url": "https://github.com/Mdabdullah3/toolphin"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   }
 }
