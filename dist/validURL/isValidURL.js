@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.isValidURL = void 0;
 const isValidURL = (url) => {
     try {
-        new URL(url);
-        return true;
+        const parsed = new URL(url);
+        return ["http:", "https:", "ftp:"].includes(parsed.protocol);
     }
     catch (_) {
         return false;
